@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-17T11:06:03 IST" name="Default suite" finished-at="2024-04-17T11:06:08 IST" duration-ms="4799">
+    <groups>
+    </groups>
+    <test started-at="2024-04-17T11:06:03 IST" name="Default test" finished-at="2024-04-17T11:06:08 IST" duration-ms="4799">
+      <class name="Automation.API.AppTest">
+        <test-method signature="parseApiJsonTest()[pri:0, instance:Automation.API.AppTest@306e95ec]" started-at="2024-04-17T11:06:03 IST" name="parseApiJsonTest" finished-at="2024-04-17T11:06:08 IST" duration-ms="4759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parseApiJsonTest -->
+      </class> <!-- Automation.API.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
