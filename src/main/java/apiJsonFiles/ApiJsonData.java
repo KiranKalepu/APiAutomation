@@ -68,4 +68,11 @@ public class ApiJsonData {
 				+ "}";
 	}
 
+	public static String deleteBook(String bookId)
+	{
+		return "{\r\n"
+				+ "    \"ID\": \""+ bookId + "\"\r\n"
+				+ "}";
+	}
+
 }
