@@ -10,6 +10,10 @@ import io.restassured.path.json.JsonPath;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class AppTest {
 
 	@Test
@@ -41,8 +45,8 @@ public class AppTest {
 	}
 
 	@Test
-	public void complexJsonHandilingTest() {
-		JsonPath jp = new JsonPath(ApiJsonData.apiDummyJsonData());
+	public void complexJsonHandilingTest() throws IOException {
+		JsonPath jp = new JsonPath(new String(Files.readAllBytes(Paths.get("./jsonFiles\\BooksData.json"))));
 		//1. Print No of courses returned by API
 		int coursesCount = jp.getInt("courses.size()");
 		System.out.println(coursesCount);
